@@ -1,81 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     margin: 1em;
 }
-.head{
+
+.head {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: goldenrod;
     margin-bottom: 0.5em;
 }
-.head .nav{
+
+.head .nav {
     padding: 2em;
 }
-.heading{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
 
-.body{
+.body {
     display: flex;
     flex-direction: column;
 }
 
-.img-div{
+.img-div {
     display: flex;
+    flex-direction: row;
+    gap: 2em;
     justify-content: center;
-    text-align: center;
-    width: 50%;
-  
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
 
+.img-div .img {
+    width: 50%;
 }
-.img-div .img{
-width:100%;
-}
-.text{
+
+.text {
     margin: 1em 0em;
     font-style: italic;
 }
-.button-div{
+
+.button-div {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.button-div .btn{
+
+.button-div .btn {
     border-color: gainsboro;
     border-radius: 9px;
-    padding:1em;
+    padding: 1em;
 }
-.footer{
-    position:fixed;
+
+.footer {
+    position: fixed;
     width: 100%;
     background-color: beige;
     bottom: 0px;
     text-align: center;
-    margin-right: 1em;
+   
 }
-.footer p{
-    padding: 1em 0.3em; /* Fixed the padding value */
-    font-size: 1em;
+
+.footer p {
+    padding: 0.7em 0.3em;
+    /* Fixed the padding value */
+    font-size: 0.8em;
 }
 
 @media screen and (max-width: 480px) {
     body {
-      background-color:gainsboro;
+        background-color: gainsboro;
     }
-    .img-div{
+
+    .img-div {
+        flex-direction: column;
+        width: 100%;
+      
+    }
+    .img-div .img{
         width: 100%;
     }
-    .footer{
+
+    .footer {
         position: sticky;
         bottom: 0px;
     }
-  }
+}
