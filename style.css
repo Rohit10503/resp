@@ -49,6 +49,8 @@
 .text {
     margin: 1em 0em;
     font-style: italic;
+    text-align: justify;
+  text-justify: inter-word;
 }
 
 .button-div {
